@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+
+.button-container {
+    margin: 1rem;
+}
+
+hr {
+    width: 80%;
+    margin: 1rem 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.placeholder-container {
+    width: 80%;
+    min-height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #ccc;
+    padding: 1rem;
+    background-color: #fff;
+}

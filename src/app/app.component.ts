@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ApiConsumerComponent } from "./_components/api-consumer/api-consumer.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ApiConsumerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

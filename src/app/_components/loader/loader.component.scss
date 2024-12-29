@@ -1,0 +1,56 @@
+.binary-rain-loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 2s infinite;
+}
+
+.binary-row {
+    display: flex;
+}
+
+.binary-cell {
+    width: 1ch;
+    height: 1ch;
+    padding: 1ch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em; //by default it is as the container's
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// for combination of pulsing and scaling
+
+// @keyframes pulse {
+//     0% {
+//         transform: scale(1);
+//         opacity: 1;
+//     }
+
+//     50% {
+//         transform: scale(0.8);
+//         opacity: 0.5;
+//     }
+
+//     100% {
+//         transform: scale(1);
+//         opacity: 1;
+//     }
+// }

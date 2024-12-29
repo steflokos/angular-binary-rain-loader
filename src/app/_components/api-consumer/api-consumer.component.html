@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Mock API Component</h1>
+  <div class="button-container">
+    <button mat-button (click)="fetchData()">Fetch Mock Data</button>
+  </div>
+  
+  <hr />
+
+  <div class="placeholder-container" *ngIf="!isLoading; else loading">
+    <p *ngIf="data">{{ data }}</p>
+    <p *ngIf="!data">No data available. Press the button to fetch data.</p>
+  </div>
+
+  <ng-template #loading>
+    <app-loader></app-loader>
+  </ng-template>
+</div>
